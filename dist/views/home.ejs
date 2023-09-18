@@ -1,0 +1,16 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+
+<h1>Система мониторинга здоровья пациента</h1>
+
+<% for (let i = 0; i < patients.length; i++) { %>
+
+    <div class="section">
+            <h2 class="section__title"><%=  %><%=  %></h2>
+            <p></p>
+    </div>
+
+<% } %>
+
+<%- include('particles/footer.ejs') %>
