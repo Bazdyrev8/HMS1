@@ -8,7 +8,7 @@ if ($key != 'HMS~pub17fra17') { // Специальный код, наприме
 $pulse = protect($_GET['pulse']);
 
 $total = mysql_result(mysql_query("SELECT count(*) FROM `statistics`"),0);
-if ($total > 15) {
+if ($total > 5) {
 	mysql_query("DELETE FROM `statistics` ORDER BY `id` ASC LIMIT 1");
 }
 
